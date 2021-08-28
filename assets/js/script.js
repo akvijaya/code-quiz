@@ -17,9 +17,9 @@ var highscoreEl = document.querySelector("#hgh-scr");
 
 const questions = [
     {
-        title: 'Which is a function ?',
-        choices: ["function ()", "method ()", "variable ()", "class ()"],
-        answer: "function ()" 
+        title: 'Which is a front end development programming language?',
+        choices: ["SQL", "Python", "Javascript", "None of the above"],
+        answer: "Javascript" 
     },
     {
         title: 'How do we declare a variable',
