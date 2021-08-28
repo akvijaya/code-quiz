@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Coding Quiz</title>
-
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
-    <div class="scores"><a href="score.html">View Highscores</a></div>
+    
 
     <div class="timer">Time: <span id="time">0</span></div>
+    <button id="scores">View Highscores</button>
 
     <div class="wrapper">
 
       <div id="start-screen" class="start">
+        
         <h1>Coding Quiz Challenge</h1>
         <p>
           Let's see what you know! Here are some code-related questions. Answer them all as quickly as you can and try to get the HIGH SCORE, but note that incorrect answers will result in a 10 second score/time penalty. Don't worry, you can try as many times as you want!
@@ -27,9 +28,7 @@
 
       <div id="questions" class="hide">
         <h2 id="question-title"></h2>
-        <div id="choices" class="choices">
-          
-        </div>
+        <div id="choices" class="choices"></div>
       </div>
 
       <div id="end-screen" class="hide">
@@ -42,9 +41,21 @@
       </div> 
 
       <div id="feedback" class="feedback hide"></div>
+
+      <div id="highscoreslist" class= "hide">
+        <h1>Coding Quiz Challenge Highscore List</h1>
+        <p>
+         Here is a list of highscores of previous quiz takers. See where you rank !!!
+        </p>
+        <button id="return">Go Back</button>
+        <button id="clear">Clear Highscores</button>
+        <div id="highscores"></div>
+
+      </div>
       
     </div>
 
     <script src="./assets/js/script.js"></script>
+
   </body>
 </html>
